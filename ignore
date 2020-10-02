@@ -1,0 +1,9 @@
+File Name: .gitignore
+
+# any comments
+File Name.txt  (a file which we dont want to track)
+*.txt (all the file with .txt extension, which we dont want to track)
+!important.txt ( a file which we want to include into track)
+
+
+# a file is already track by git is not effected by .gitignore file
