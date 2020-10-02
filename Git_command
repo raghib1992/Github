@@ -49,6 +49,8 @@ git reset --hard HEAD~1/x
 # to push your repository from local to remote (github account)
 git push origin master(branch)
 
+# to check remote repo where we can puch our commit
+git remote
 
-
-
+# to pull all the changes made in the remote serve to the local repo
+git pull origin(remote location) master(branch)
