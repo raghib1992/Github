@@ -46,6 +46,9 @@ git reset --hard e20802ff79a0f8da778905707eca51f5b980acc6 (commit ID)
 # to back to one/x step back commit 
 git reset --hard HEAD~1/x
 
+# to push your repository from local to remote (github account)
+git push origin master(branch)
+
 
 
 
