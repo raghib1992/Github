@@ -82,21 +82,15 @@ git stash list
 # to apply apply changes
 git stash apply 0(stash index number)
 
+# to clear stash
+git stash clear
 
 
+#to merger branches
+##please be in the branch in which all the chages merges like changes done into shaheen and it will merge into master, before merging exit from shaheen and enter into master
+git merge shaheen
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+# to squash(merge) commit
+git rebase -i HEAD~4(no.of commit)
 
 
