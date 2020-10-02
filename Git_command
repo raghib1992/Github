@@ -34,4 +34,18 @@ git show 85f54e99d0ed1a08e1af6cd1e39e12ea6f991068 (commit ID)
 # to revert commit - get new commit ID for revert, and previous commit( which we want to revert) also available in logs
 git revert 85f54e99d0ed1a08e1af6cd1e39e12ea6f991068 (commit ID)
 
-## testing git reset --soft##
+# to revert the commit but changes will be availble to file
+git reset --soft e20802ff79a0f8da778905707eca51f5b980acc6 (commit ID)
+
+# to revert the commit and unstaged the changes
+git reset --mixed e20802ff79a0f8da778905707eca51f5b980acc6 (commit ID)
+
+# to revert the commit, unstaged and delete everything from logs
+git reset --hard e20802ff79a0f8da778905707eca51f5b980acc6 (commit ID)
+
+# to back to one/x step back commit 
+git reset --hard HEAD~1/x
+
+
+
+
