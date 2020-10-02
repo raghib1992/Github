@@ -69,25 +69,28 @@ git checkout rashid((new_branch_name)
 # to create a branch and enter into that brach i.e. combine abouve two command
 git checkout -b shaheen(new_branch_name)    #new branch created and enter into same
 
-
+# to push commit which has been done by branch which unknow to remote server
 git push --set-upstream origin shaheen(new branch unknown to remote)
 
 
+# to do stash (not commit) save the changes in stash
+git stash
+
+# to check stash
+git stash list
+
+# to apply apply changes
+git stash apply 0(stash index number)
+
+# to clear stash
+git stash clear
 
 
+#to merger branches
+##please be in the branch in which all the chages merges like changes done into shaheen and it will merge into master, before merging exit from shaheen and enter into master
+git merge shaheen
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+# to squash(merge) commit
+git rebase -i HEAD~4(no.of commit)
 
 
