@@ -1,0 +1,6 @@
+# git initialozation in folder
+-git init
+-git add README.md
+-git commit -m "my first commit"
+-git remote add origin http://remote new repo url
+-git push -u origin master
