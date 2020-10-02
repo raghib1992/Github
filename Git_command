@@ -12,3 +12,12 @@ git config --list --show-origin
 
 # to clone git hub repo in your machine
 git clone http.?//.........(clone url)
+
+# to check status of your local repository
+git status
+
+# to staged all changes
+git add filename
+git add .  (to stage all the files in the repo in which changes are made)
+git add *.txt (to satge file with .txt)
+
