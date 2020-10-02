@@ -21,3 +21,12 @@ git add filename
 git add .  (to stage all the files in the repo in which changes are made)
 git add *.txt (to satge file with .txt)
 
+# to commit changes in the local repository
+git commit -m "add messages here to get description about commit"
+
+
+# to check all the previous commit on our local repository
+git log
+
+# to check detials of the commit
+git show 85f54e99d0ed1a08e1af6cd1e39e12ea6f991068 (commit ID)
