@@ -1,0 +1,14 @@
+# to check git version
+git --version
+
+# to configure username on git in your machine
+git config --global user.name "raghib1992"
+
+#to configure your email
+git config --global user.email "raghib.npti@gmail.com"
+
+#to check git config
+git config --list --show-origin
+
+# to clone git hub repo in your machine
+git clone http.?//.........(clone url)
