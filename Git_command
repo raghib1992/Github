@@ -54,3 +54,40 @@ git remote
 
 # to pull all the changes made in the remote serve to the local repo
 git pull origin(remote location) master(branch)
+
+# to show the list of branch
+git branch
+
+
+# to create new branch
+git branch rashid(new_branch_name)
+
+# to exit current branch and enter into new branch
+git checkout rashid((new_branch_name)
+## while doing git branch...current branch will be highlighted with * and green colour
+
+# to create a branch and enter into that brach i.e. combine abouve two command
+git checkout -b shaheen(new_branch_name)    #new branch created and enter into same
+
+
+git push --set-upstream origin shaheen(new branch unknown to remote)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
