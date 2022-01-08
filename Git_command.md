@@ -1,33 +1,114 @@
-# to check git version
+# Git Configure
+## Install git
+## to check git version
+```
 git --version
+```
 
-# to configure username on git in your machine
+## to configure username on git
+```
 git config --global user.name "raghib1992"
+```
 
-#to configure your email
+## to configure your email
+```
 git config --global user.email "raghib.npti@gmail.com"
+```
 
-#to check git config
+## to check git config
+```
 git config --list --show-origin
-
-# to clone git hub repo in your machine
-git clone http.?//.........(clone url)
-
-# to check status of your local repository
+```
+***************************************************
+# Create Repo
+## command to create git repo
+## go into the folder where you want to create repo
+```
+git init
+```
+## to check status of your local repository
+```
 git status
+```
 
-# to staged all changes
+## to staged all changes
+```
 git add filename
-git add .  (to stage all the files in the repo in which changes are made)
+git add .  ## (to stage all the files in the repo in which changes are made)
 git add *.txt (to satge file with .txt)
-
-# to commit changes in the local repository
+```
+## to commit changes in the local repository
+```
 git commit -m "add messages here to get description about commit"
+```
+## to commit all unstage changes, or add commit in one command
+```
+git commit -a -m "message"
+```
+## To edit commit message in VS code
+```
+git config --global core.editor "code --wait"
+```
 
-
-# to check all the previous commit on our local repository
+## to check all the previous commit on our local repository
+```
 git log
-
+```
+## to amend the last commit message or amend the last commit
+```
+git commit --amend
+```
+************************************************************
+# Branches
+## Head
+### Head tell us the reference, where we are, the current branch and commit
+## To get the list of branch
+```
+git branch
+```
+## Create new branch
+```
+git branch <branch name>
+```
+## To switch to different branch
+```
+git switch <branch name>
+git checkout <branch name>
+```
+## To create new branch and switch into it
+```
+git switch -c <branch name>
+git checkout -b <branch name>
+```
+## To delete branch
+```
+git branch -d <branch name>
+git bracnch -D <branch name>
+```
+## To rename the branch
+```
+git branch -m <new branch name>
+```
+*************************************
+# Merging Branches
+## Move to receving branch
+## fast forward merge
+```
+git merge <branch name>
+```
+## Generating Merge without conflict
+```
+git merge <branch name> # commit message
+```
+## Generating Merge with conflict
+```
+git merge <branch name>
+```
+### edit the conflict file
+```
+git add <file name>
+git commit -m "<message>"
+```
 # to check detials of the commit
 git show 85f54e99d0ed1a08e1af6cd1e39e12ea6f991068 (commit ID)
 
