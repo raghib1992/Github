@@ -109,6 +109,9 @@ git merge <branch name>
 git add <file name>
 git commit -m "<message>"
 ```
+*****************************************
+# Difference
+
 # to check detials of the commit
 git show 85f54e99d0ed1a08e1af6cd1e39e12ea6f991068 (commit ID)
 
