@@ -1,3 +1,6 @@
+****************************
+# ********** Git *************
+****************************
 # Git Configure
 ## Install git
 ## to check git version
@@ -221,36 +224,86 @@ git reset --hard HEAD~4
 ```
 git revert <commit hash>
 ```
-
-
-
-# to push your repository from local to remote (github account)
-git push origin master(branch)
-
-# to check remote repo where we can puch our commit
-git remote
-
-# to pull all the changes made in the remote serve to the local repo
-git pull origin(remote location) master(branch)
-
-# to show the list of branch
-git branch
-
-
-# to create new branch
-git branch rashid(new_branch_name)
-
-# to exit current branch and enter into new branch
-git checkout rashid((new_branch_name)
-## while doing git branch...current branch will be highlighted with * and green colour
-
-# to create a branch and enter into that brach i.e. combine abouve two command
-git checkout -b shaheen(new_branch_name)    #new branch created and enter into same
-
-# to push commit which has been done by branch which unknow to remote server
-git push --set-upstream origin shaheen(new branch unknown to remote)
-
-# to squash(merge) commit
-git rebase -i HEAD~4(no.of commit)
-
+***************************************
+# ********** GitPush*****************
+***************************************
+# Cloning
+## To get remote repo on your local achine
+```
+git clone <repo url>
+```
+**************************************
+# Setup SSh key or public token
+## Ref ssh key
+```
+https://docs.github.com/en/enterprise-server@3.0/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+```
+## Ref for Personal Access Token
+```
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+```
+***************************************
+# Send local repo to github first time
+## Create new emty repo on github
+## To view an existing remote, list of remotes
+```
+git remote -v
+```
+## Adding a new new remote to your local repo
+```
+git remote add <name> <url>
+git remote add origin <url>
+```
+## Push the changes to remote
+```
+git push <remote> <branch>
+```
+****************************************
+## Rename remote repo
+```
+git remote rename <old> <new>
+```
+## push from different local branch to different remote branch
+```
+git push origin <local branch>:<remote branch>
+```
+## to set upstream of local and remote
+```
+git push -u origin <branch name>
+git push -u origin <local-branch>:<remote brnach>
+```
+*******************************************
+# Remote Tracking Branch
+## to see the list all remote branch
+```
+git branch -r 
+```
+## to check the commit difference between remote brnach and the local brnack
+##### check the second line of the output of the command
+```
+git status
+```
+## to checkout remote pointer branch 
+```
+git checkout origin/master
+```
+## switch to remote branch not available locally
+```
+git switch <remote branch>
+git checkout --track origin/puppies
+```
+*********************************************
+# Fetch
+## get changes from remote repo but not integrated with my working files
+```
+git fetch <remote>
+git fetch origin
+git fetch <remote> <branch>
+```
+********************************************
+# Pull
+## Get the changes from the remote branch and merge it to locally
+```
+git pull <remote> <branch>
+```
 
