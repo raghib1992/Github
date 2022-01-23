@@ -305,5 +305,6 @@ git fetch <remote> <branch>
 ## Get the changes from the remote branch and merge it to locally
 ```
 git pull <remote> <branch>
+git pull
 ```
-
+*******************************************
