@@ -7,7 +7,6 @@
 ```
 git --version
 ```
-
 ## to configure username on git
 ```
 git config --global user.name "raghib1992"
@@ -131,7 +130,7 @@ git diff HEAD <filename>
 ```
 git diff --staged
 git diff --staged <filename>
-git diff --cache
+git diff --cached
 ```
 ## comapare difference in two branches
 ```
@@ -146,13 +145,13 @@ git diff <commit1>..<commit2>
 ## TO hide or remeber the changes without commit
 ```
 git stash
-git stash savez
+git stash save
 ```
-## to apply stash to same or different branch
+## to get recent stash to same or different branch, it remove the stash
 ```
 git stash pop
 ```
-## to apply stash to multiple branches
+## to apply stash to multiple branches, it keep the stash
 ```
 git stash apply
 ```
@@ -171,7 +170,7 @@ git stash clear
 ```
 *****************************************
 # Checkout
-## to go into "detached head" mode
+## to go into "detached head" mode: You can look around and make experimental changes and commit them, and you can discard any commits you make in this state without impacting nay branches by switiching back to a branch.
 ```
 git checkout <commit hash>
 ```
@@ -257,11 +256,13 @@ git remote add origin <url>
 ## Push the changes to remote
 ```
 git push <remote> <branch>
+git push origin master
 ```
 ****************************************
 ## Rename remote repo
 ```
 git remote rename <old> <new>
+git remote remove <name>
 ```
 ## push from different local branch to different remote branch
 ```
