@@ -117,7 +117,7 @@ git commit -m "<message>"
 ```
 *****************************************
 # Difference
-## To check the changes done for unstage changes
+## To check the changes done for unstage changes, compare staging area with working directory
 ```
 git diff
 ```
@@ -142,7 +142,7 @@ git diff <commit1>..<commit2>
 ```
 ****************************************
 # Stash
-## TO hide or remeber the changes without commit
+## To hide or remeber the changes without commit
 ```
 git stash
 git stash save
@@ -183,7 +183,7 @@ git switch master
 ```
 git checkout HEAD~4
 ```
-## undo changes before staged
+## undo changes in a file before staged
 ```
 git checkout HEAD <filename>
 git checkout -- <filename>
@@ -198,7 +198,7 @@ git restore <filename>
 ```
 git restore --source HEAD~4 <filename>
 ```
-## to remove file from from stage back before commit
+## to remove file from from staged to untrack before commit
 ```
 git restore --staged <filename>
 ```
@@ -255,13 +255,16 @@ git remote add origin <url>
 ```
 ## Push the changes to remote
 ```
-git push <remote> <branch>
+git push <remote name> <branch>
 git push origin master
 ```
 ****************************************
 ## Rename remote repo
 ```
 git remote rename <old> <new>
+```
+## Remove remote repo from local
+```
 git remote remove <name>
 ```
 ## push from different local branch to different remote branch
