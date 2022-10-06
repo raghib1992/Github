@@ -282,7 +282,7 @@ git push -u origin <local-branch>:<remote brnach>
 ```
 git branch -r 
 ```
-## to check the commit difference between remote brnach and the local brnack
+## to check the commit difference between remote brnach and the local branchgit 
 ##### check the second line of the output of the command
 ```
 git status
@@ -312,3 +312,13 @@ git pull <remote> <branch>
 git pull
 ```
 *******************************************
+# Rebase
+## Merge master into your brnach
+```
+git rebase master
+``` 
+
+## rebase interactive to clean commit upto HEAD~4
+```
+git rebase -i HEAD~4
+```
