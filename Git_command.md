@@ -16,7 +16,6 @@ git config --global user.name "raghib1992"
 ```
 git config --global user.email "raghib.npti@gmail.com"
 ```
-
 ## to check git config
 ```
 git config --list --show-origin
@@ -89,7 +88,7 @@ git checkout -b <branch name>
 ## To delete branch
 ```
 git branch -d <branch name>
-git bracnch -D <branch name>
+git branch -D <branch name>
 ```
 ## To rename the branch
 ```
